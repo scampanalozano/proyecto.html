@@ -1,0 +1,190 @@
+@media screen and (min-width: 1301px) and (max-width: 1334px) {
+    .header {
+
+        margin-right: 600px;
+
+    }
+
+    .titulos {
+        display: grid;
+        margin-top: 250px;
+    }
+
+    .portada {
+        background-position: 0px -150px;
+        height: 70vh;
+        width: 100%;
+        margin-block-end: -100px;
+    }
+
+    .logo {
+
+        padding-left: 500px;
+
+    }
+
+    .menu {
+
+        padding: 0px -70px;
+
+    }
+
+    .main {
+
+        margin-right: 500px;
+        margin-top: 30px;
+        margin-block-end: 50px;
+
+    }
+
+    .titulos-cuerpo {
+        margin-right: 280px;
+        margin-left: -80px;
+
+    }
+
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .imagen-galeria-prueba {
+
+        height: 407px;
+        width: 297px;
+
+    }
+
+    .nav {
+
+        margin-left: -40px;
+        margin-right: 500px;
+
+    }
+
+    .galeria-aside {
+
+        padding-left: 30px;
+        margin-right: 750px;
+        margin-left: -5px;
+    }
+
+    .titulos-aside {
+        margin-left: -750px;
+        margin-block-end: 80px;
+    }
+
+    .titulos-cuerpo1 {
+
+        margin-right: 750px;
+        margin-left: -280px;
+
+    }
+
+    .imagenes-contenedor {
+        margin-block-end: 70px;
+        margin-left: -60px;
+    }
+
+    .primer-contenedor-footer {
+        height: 190px;
+        width: 1200px;
+        margin-left: 40px;
+    }
+
+    .division-contenido {
+        width: 150px;
+
+    }
+
+    .contenido-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-right: 700px;
+        margin-block-end: 100px;
+
+    }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 959px) {
+    .header {
+        margin-right: 500px;
+
+    }
+
+    .titulos {
+        display: grid;
+        margin-top: 250px;
+
+    }
+
+    .portada {
+        background-position: -300px 0px;
+        height: 100vh;
+        width: 100%;
+        margin-block-end: -100px;
+    }
+
+    .redes {
+        display: grid;
+        margin-top: -300px;
+        margin-left: -300px;
+
+    }
+
+    .busqueda {
+
+        margin-left: -500px;
+    }
+
+
+    .button {
+        margin-left: -150px;
+        margin-top: -40px;
+    }
+
+    .logo {
+        margin-left: -500px;
+        margin-top: -20px;
+    }
+   
+    .titulos-cuerpo {
+        display:flex;
+        margin-right: -150px;
+    
+    }
+    .main {
+        grid-area: main;
+        display: flex;
+        margin-top: 50px;
+     
+    
+    }
+
+    
+    .nav {
+        display: grid;
+        margin-left: -40px;
+        margin-right: 500px;
+
+    }
+
+
+  
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+}

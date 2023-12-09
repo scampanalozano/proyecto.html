@@ -13,6 +13,7 @@
 
 body {
     margin: 0px !important;
+    overflow-x: hidden;
 }
 
 
@@ -38,11 +39,9 @@ body {
 
 #navegacion {
     display: grid;
-    height: 60px;
-    grid-template-columns: 4fr 4fr;
     height: 90px;
+    grid-template-columns: 4fr 4fr;
     border-bottom: 1px solid rgba(255, 255, 255, 0.50);
-
 }
 
 .contenido-header {
@@ -57,9 +56,10 @@ body {
 
     background-image: url(../SRC/logo.svg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: bottom 40px left 100px;
+    margin-left: -5px;
     position: center;
-    margin-left: 80px;
+
 }
 
 .menu {
@@ -69,7 +69,7 @@ body {
     position: relative;
     margin-top: 8px;
     padding: 0px 20px;
-    margin-left: 20px;
+  
 }
 
 .menu-color {
@@ -213,34 +213,27 @@ body {
     display: inline grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
-    border: 1px solid #000;
     height: 407px;
-    width: 250px;
     justify-content: space-between;
     overflow: hidden;
-
 
 }
 
 .imagen-galeria {
     background-image: url(../SRC/galeria1.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: scroll;
-    background-position: -50px -0px;
+    background-repeat: no-repeat;
+    margin-left: -150px;
     height: 407px;
-    width: 250px;
-    margin-left: -180px;
-
-
+    background-position: -90px 0px;
 }
 
 .imagen-galeria1 {
-    background-image: url(../SRC/segundaGaleria3.png);
+    background-image: url(../SRC/galeria1.1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: -150px -0px;
+    background-position: -0px -80px;
     height: 407px;
     width: 290px;
 
@@ -254,13 +247,81 @@ body {
     background-position: -250px 0px;
     height: 407px;
     width: 290px;
+    position: relative;
+}
+.div {
+
+    display: flex;
+    padding: 1em;
+    transition: all .2s linear;
+    flex-direction: column;
+    position: relative;
+}
+.animation {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    transition: all .2s linear;
+    
+}
+a {
+    text-decoration: none;
+    color:  #FFF;
+    font-size: 20px;
+}
+.alineacion-texto{
+    margin-left: 20px;
+    margin-top: 10px;
+  
+}
+
+ 
+ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+    padding: 0;
+}
+
+
+ul li a.active div,
+ul li a:hover div  {
+    background: #fff;
+    color: #000;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.texto-alineacion{
+    margin-left: 25px;
 
 }
+ul li a img{
+    display: none;
+}
+ul li a.active img,
+ul li a:hover img  {
+ display: inline-block;
+}
+
+ul li {
+    margin: .5em;
+}
+ul li a {
+
+    display: inline-flex;
+
+}
+
+
 
 .titulos-cuerpo {
     margin-top: 50px;
     margin-right: 170px;
 
+}
+.titulos-cuerpo1 {
+    margin-top: 50px;
+    margin-right: 170px;
 
 }
 
@@ -332,6 +393,7 @@ body {
     grid-area: nav;
     display: grid;
     grid-template-columns: 4fr 4fr;
+  
 }
 
 .titulos-nav {
@@ -412,47 +474,11 @@ body {
     display: inline grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
-    border: 1px solid #000;
     justify-content: space-between;
     overflow: hidden;
 
 }
 
-.imagen-segunda-galeria {
-    background-image: url(../SRC/galeria1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: -50px -0px;
-    height: 407px;
-    width: 250px;
-    margin-right: -100px
-}
-
-.imagen-segunda-galeria2 {
-    background-image: url(../SRC/segundaGaleria2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: -50px -0px;
-    height: 407px;
-    width: 280px;
-
-
-}
-
-.imagen-segunda-galeria3 {
-    background-image: url(../SRC/segundaGaleria3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: -10px -0px;
-    height: 407px;
-    width: 280px;
-
-
-
-}
 
 .segunda-galeria {
     margin-left: 180px;
@@ -496,9 +522,31 @@ body {
     margin-top: -100px;
     justify-content: center;
     overflow: hidden;
-
-
+    padding-top: 20px;
+    
 }
+
+
+.borde:hover{
+    border: 1px solid #000;
+    width: 300px;
+    height: 280px;
+    cursor: pointer;
+    margin-top: -10px;
+
+  
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translatex(0px);
+    }
+    100% {
+        transform: translatey(-8px);
+    }
+}
+
+
 
 .galeria-aside-division {
     display: grid;
@@ -506,6 +554,11 @@ body {
     height: 200px;
     overflow: hidden;
 }
+
+
+
+
+
 
 .imagen-aside1 {
     background-image: url(../SRC/primera.png);
@@ -520,6 +573,7 @@ body {
     width: 300px;
     height: 100px;
     overflow: hidden;
+  
 
 }
 
@@ -671,15 +725,6 @@ body {
     margin-right: 50px;
 }
 
-.imagen-contendor {
-    width: 500px;
-    height: 800px;
-    margin-left: 100px;
-    margin-top: 50px;
-    margin-block-end: 50px;
-    position: absolute;
-
-}
 
 .linea-logo{
    width: 350px;
@@ -716,6 +761,19 @@ body {
     background: #26282B;
     
 }
+.primer-contenedor-footer1{
+    display: inline-block;
+    border: 1px solid #000;
+    height: 190px;
+    width: 1300px;
+    overflow: hidden;
+    margin: -80px 100px 100px;
+    background: #26282B;
+    
+}
+
+
+
 
 
 
@@ -772,15 +830,13 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: 95px;
     margin-right: 30px;
-    width: 500px;
     margin-block-end: 100px;
     
 }
 .division-contenido{
     display: grid;
-    width: 325px;
     height: 200px;
-
+    width: 280px;
 
 }
 .contenido-division{
@@ -795,6 +851,15 @@ body {
     margin-top: -5px;
     text-align: center;
     font-size: 20px;
+    margin-left: -30px;
+}
+
+.letras-footer-1{
+    display: block;
+    color: #B4B7B7;
+    margin-top: -5px;
+    font-size: 20px;
+  
 }
 .alineacion{
     text-align: left;
@@ -837,7 +902,6 @@ body {
     display: inline grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
-    border: 1px solid #000;
     height: 407px;
     justify-content: space-between;
 
@@ -850,8 +914,7 @@ body {
     background-attachment: scroll;
     background-position: -150px -0px;
     height: 407px;
-    width: 101px;
- 
+    width: 125px;
 
 }
 
@@ -867,20 +930,45 @@ body {
 
 }
 
-.imagen-galeria-prueba3 {
+.imagen-galeria-prueba3{
     background-image: url(../SRC/segundaGaleria3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    background-position: -50px -0px;
+    background-position: -150px 0px;
     height: 407px;
-    width: 250px;
-    margin-left: -180px;
-
+    width: 290px;
+ 
 
 }
+
 .alineacion{
     margin-left: 80px;
+}
+
+.texto-encima{
+  
+    z-index: 500;
+    margin-top: -50px;
+    
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin: .5em;
+}
+ul li a {
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    align-items: self-end;
+
 }
 
 
