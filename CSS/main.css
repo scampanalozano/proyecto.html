@@ -199,6 +199,9 @@ body {
 
 }
 
+.view-celular{
+    display: none;
+}
 
 
 .main {
@@ -969,6 +972,20 @@ ul li a {
     display: inline-flex;
     align-items: self-end;
 
+}
+
+
+.logo1 {
+
+    background-image: url(../SRC/logo.svg);
+    background-repeat: no-repeat;
+    margin-left: -5px;
+    position: center;
+
+}
+
+.parrafo-celular{
+    display: none;
 }
 
 
